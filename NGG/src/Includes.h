@@ -1,3 +1,6 @@
 #pragma once
 #include <fstream>
-#include "Game.h"
+#include <string>
+#include <iostream>
+#include <vector>
+#include <random>
