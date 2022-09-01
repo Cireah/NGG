@@ -10,9 +10,9 @@ public:
 		srand(time(NULL));
 		int randomNumber = rand() % 100 + 1;
 		std::cout << "The number is: " << randomNumber << "\n";
+		std::cout << "Guess a random number between 1-100";
 		while (tries < 10)
 		{
-			std::cout << "hi" << tries+1 << "\n";
 			tries++;
 		}
 	}
