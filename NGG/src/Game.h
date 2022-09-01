@@ -7,12 +7,14 @@ public:
 	void Run()
 	{
 		int tries = 0;
+		std::string userinput;
 		srand(time(NULL));
 		int randomNumber = rand() % 100 + 1;
-		std::cout << "The number is: " << randomNumber << "\n";
-		std::cout << "Guess a random number between 1-100";
+		std::cout << "Guess a random number between 1-100" << "\n";
+		std::getline(std::cin, userinput);
 		while (tries < 10)
 		{
+
 			tries++;
 		}
 	}
