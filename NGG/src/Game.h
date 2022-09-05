@@ -7,6 +7,7 @@ public:
 	void Run()
 	{
 		int tries = 0;
+		bool wincheck = false;
 		std::string userinput;
 		srand(time(NULL));
 		int randomnumber = rand() % 100 + 1;
@@ -33,7 +34,13 @@ public:
 			{
 				std::cout << "You guessed the right number! Good job! \n";
 				tries = 10;
+				wincheck = true;
 			}
+		}
+
+		if (wincheck == false)
+		{
+			std::cout << "You ran out of attempts. :( \nThe number is: " << randomnumber << "\n";
 		}
 	}
 };
