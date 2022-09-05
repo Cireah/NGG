@@ -48,8 +48,7 @@ public:
 
 		if (wincheck == false)
 		{
-			std::cout << "You ran out of attempts. :( \nThe number is: " << randomnumber << "\n";
-			std::cout << "You won " << wins << " times\n";
+			Fail(randomnumber, wins);
 		}
 	}
 	int Randomnumber()
@@ -57,5 +56,21 @@ public:
 		srand(time(NULL));
 		int randomnumber = rand() % 101;
 		return randomnumber;
+	}
+	void Fail(int randomnumber, int wins)
+	{
+		std::cout << "You ran out of attempts. :( \nThe number is: " << randomnumber << "\n";
+		std::cout << "You won " << wins << " times\n";
+
+		std::cout << "Do you want to play again? Y/N\n";
+		std::string playagain = "";
+		std::getline(std::cin, playagain);
+		if (playagain == "y" || playagain == "Y")
+		{
+			Run();
+		}
+		else
+		{
+		}
 	}
 };
