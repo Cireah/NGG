@@ -4,6 +4,8 @@
 void Game::Run()
 {
 	std::cout << "Guess a random number between 0-100 \n";
+	tries = 0;
+	wins = 0;
 
 	while (tries < 8)
 	{
