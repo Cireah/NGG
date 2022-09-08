@@ -10,6 +10,7 @@ public:
 
 	void Fail(int randomnumber, int wins);
 
+private: 
 	int tries = 0;
 	int wins = 0;
 	bool wincheck = false;
